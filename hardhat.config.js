@@ -64,6 +64,12 @@ module.exports = {
       saveDeployments: false,
       tags: ["test", "legacy", "use_root"],
     },
+    fuji: {
+      url: 'https://api.avax-test.network/ext/bc/C/rpc',
+      gasPrice: 225000000000,
+      chainId: 43113,
+      accounts: ["e598f68f1aec0a64263ded80db6ea93d1d3a18a4c6ed29ac3b2f1ba1ec601cca"],
+    },
     ropsten: {
       url: `https://ropsten.infura.io/v3/${process.env.INFURA_ID}`,
       tags: ["test", "legacy", "use_root"],
@@ -76,6 +82,7 @@ module.exports = {
       chainId: 1,
       accounts: real_accounts,
     }
+   
   },
   mocha: {
   },
@@ -108,3 +115,9 @@ module.exports = {
   },
 };
 
+
+
+// fuji testnet
+// ENS: 0x570E1C039bA713505D5D636EB3DA01d5Ef49D401
+// Resolver: 0x74b0e1Fb2f975b38d13Cb0d33c3D33d5Cb81D00B
+// Registrar: 0x3369FeaAEbB0F855056c356f7BC657367cAdB450
